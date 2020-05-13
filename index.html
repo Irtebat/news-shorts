@@ -7,18 +7,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <style>
+      .text-responsive {
+        font-size: calc(50% + 0.5vw + 0.5vh);
+      }
+    </style>
     <title>NewsShorts</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav justify-content-between">
-        <div><a class="navbar-brand" href="#"><h3><span class="badge badge-light">NewsShorts</span></h3></a>
-        <span style="color:white"><strong>Your one stop destination for news</strong></span></div>
-        <span class="float-right" style="color:white">Powered by <a href="https://newsapi.org/"><strong>NewsAPI</strong></a></span>
-        
+        <div><a class="navbar-brand" href="#"><h3><span class="badge badge-light">NewsShorts</span></h3></a>       
     </nav>
     <div class="alert alert-success alert-dismissible fade show" role="alert" style="text-align: center;">
-        <span id="quoteSpan"><strong>Ultra-fast-results!</strong> Search for news by keyword</span>
+        <span id="quoteSpan" >Powered by <a href="https://newsapi.org/"><strong>NewsAPI</strong></span></a>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -28,8 +29,8 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-9 col-sm-12 row justify-content-center ">
                 <div class="form-group ">
-                    <h5 style="text-align: center;"><span>Search for news by keyword</span></h5>
-                    <input type="search" class="form-control" id="searchBox" placeholder="Search" style="width:30vw">
+                    <h5 style="text-align: center;" class="text-responsive"><span>Search for news by keyword</span></h5>
+                    <input type="search" class="form-control" id="searchBox" placeholder="Search" style="width:60vw">
                 </div>
                 <div class="accordion" id="newsAccordian"></div>
             </div>
