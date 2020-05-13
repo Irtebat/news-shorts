@@ -11,9 +11,11 @@
     <title>NewsShorts</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><h3><span class="badge badge-light">NewsShorts</span></h3></a>
-        <span style="color:white"><strong>Your one stop destination for news</strong></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav justify-content-between">
+        <div><a class="navbar-brand" href="#"><h3><span class="badge badge-light">NewsShorts</span></h3></a>
+        <span style="color:white"><strong>Your one stop destination for news</strong></span></div>
+        <span class="float-right" style="color:white">Powered by <a href="https://newsapi.org/"><strong>NewsAPI</strong></a></span>
+        
     </nav>
     <div class="alert alert-success alert-dismissible fade show" role="alert" style="text-align: center;">
         <span id="quoteSpan"><strong>Ultra-fast-results!</strong> Search for news by keyword</span>
@@ -30,9 +32,9 @@
                     <input type="search" class="form-control" id="searchBox" placeholder="Enter keyword" style="width:30vw">
                 </div>
                 <div class="accordion" id="newsAccordian"></div>
+            </div>
         </div>
-
-    </div>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
